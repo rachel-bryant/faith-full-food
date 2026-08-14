@@ -1,1 +1,30 @@
+@font-face {
+    font-family: 'Roboto Slab';
+    src: url('./RobotoSlab.ttf') format('truetype');
+    font-style: normal;
+    font-weight: 400;
+}
 
+body {
+    margin: 0;
+    font-family: 'Roboto Slab', serif;
+}
+
+#nav-bar {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    background: #3E5E20;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border-bottom: 3px solid #2e4718;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: #FFFFFF;
+    background: rgba(255, 255, 255, 0.2);
+    padding: 8px 15px;
+    border-radius: 5px;
+    font-family: 'Roboto Slab', serif;
+}
