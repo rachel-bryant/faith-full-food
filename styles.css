@@ -9,6 +9,7 @@ body {
 #nav-bar {
     width: 100%;
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: space-evenly;
     background: #3E5E20;
@@ -55,7 +56,6 @@ body {
 
 #people-dropdown {
     position: relative;
-    transition: 0.3s;
 }
 
 #people-dropdown-content {
@@ -66,12 +66,22 @@ body {
     border-radius: 0 0 10px 10px;
 }
 
-#people-dropdown:hover #people-dropdown-content {
-    display: block;
-    animation: dropdownIn 0.2s ease-out;
+/* make sure hover only works when you can actually hover, aka on non-touch screens */
+@media (pointer: fine) {
+    #people-dropdown:hover #people-dropdown-content {
+        display: block !important;
+    }
 }
 
-@keyframes dropdownIn {
-    from { opacity: 0; transform: translateY(-3px); }
-    to { opacity: 1; transform: translateY(0); }
+@media (max-width: 425px) {
+    #nav-bar {
+        justify-content: center;
+        padding: 10px 8px;
+        gap: 10px 20px;
+    }
+
+    .nav-link, .dropdown-link {
+        font-size: 15px;
+        padding: 6px 10px;
+    }
 }
