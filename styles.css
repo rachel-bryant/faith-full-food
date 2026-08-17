@@ -1,12 +1,29 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;700&display=swap'); /* Roboto Slab */
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue:wght@400;700&display=swap'); /* Bebas Neue */
 
+
+/* GENERAL STYLING */
 body {
     margin: 0;
+}
+
+h1 {
+    font-family: Bebas Neue;
+    font-size: 37px;
+    color: #3E5E20;
+    transition: 0.3s;
+}
+
+p {
+    font-family: Roboto Slab;
+    font-size: 18px;
+    color: #362314;
 }
 
 /* NAVIGATION BAR */
 
 #nav-bar {
+    position: fixed;
     width: 100%;
     display: flex;
     flex-wrap: wrap;
@@ -54,11 +71,11 @@ body {
     background: rgba(255, 255, 255, 0.5);
 }
 
-#people-dropdown {
+#people-dropdown, #projects-dropdown, #purpose-dropdown, #places-dropdown, #part-dropdown {
     position: relative;
 }
 
-#people-dropdown-content {
+#people-dropdown-content, #projects-dropdown-content, #purpose-dropdown-content, #places-dropdown-content, #part-dropdown-content {
     display: none;
     position: absolute;
     background: #3E5E20;
@@ -66,14 +83,44 @@ body {
     border-radius: 0 0 10px 10px;
 }
 
-/* make sure hover only works when you can actually hover, aka on non-touch screens */
-@media (pointer: fine) {
-    #people-dropdown:hover #people-dropdown-content {
-        display: block !important;
-    }
+#people-dropdown:hover #people-dropdown-content, 
+#projects-dropdown:hover #projects-dropdown-content,
+#purpose-dropdown:hover #purpose-dropdown-content,
+#places-dropdown:hover #places-dropdown-content,
+#part-dropdown:hover #part-dropdown-content {
+    display: block;
 }
 
+/* SPACER */
+#spacer {
+    width: 100%;
+    height: 100px;
+}
+
+/* VISION AND VALUES SECTION */
+#vision-and-values {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#vision, #values {
+    width: 45%;
+    background: rgba(129, 166, 50, 0.5);
+    padding: 10px;
+    transition: 0.3s;
+}
+
+#vision:hover, #values:hover {
+    background: rgba(129, 166, 50, 0.75);
+}
+
+#vision:hover h1, #values:hover h1 {
+    font-size: 40px;
+}
+
+/* styling for mobile devices */
 @media (max-width: 425px) {
+    /* NAV BAR */
     #nav-bar {
         justify-content: center;
         padding: 10px 8px;
@@ -83,5 +130,19 @@ body {
     .nav-link, .dropdown-link {
         font-size: 15px;
         padding: 6px 10px;
+    }
+
+    /* VISION AND VALUES */
+    #vision-and-values {
+        flex-direction: column;
+        text-align: center;
+        gap: 20px;
+        margin: 0px 20px;
+        margin-top: 10px;
+    }
+
+    #vision, #values {
+        width: 100%;
+        box-sizing: border-box;
     }
 }
