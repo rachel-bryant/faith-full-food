@@ -47,8 +47,15 @@ p {
     outline: none;
     transition: 0.3s ease;
     display: inline-block;
-    cursor: default;
     z-index: 1000;
+}
+
+.nav-link {
+    cursor: default;
+}
+
+.dropdown-link {
+    cursor: pointer;
 }
 
 .nav-link:hover {
@@ -71,7 +78,7 @@ p {
     min-width: 125px;
     background: rgba(255, 255, 255, 0.2);
     border-bottom: 1px solid rgba(255, 255, 255, 0.3);
-    z-index: 1000;
+    z-index: 1001;
 }
 
 .dropdown-link:hover {
@@ -89,7 +96,7 @@ p {
     background: #3E5E20;
     border: 2px solid #2E4719;
     border-radius: 0 0 10px 10px;
-    z-index: 1000;
+    z-index: 1001;
 }
 
 #people-dropdown:hover #people-dropdown-content, 

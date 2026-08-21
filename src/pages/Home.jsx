@@ -1,5 +1,6 @@
 import '../styles.css';
 import Navbar from '../components/Navbar.jsx';
+import { Link } from 'react-router-dom';
 
 function Home() {
     return (
@@ -9,15 +10,15 @@ function Home() {
         <div id="nav-logo">
             <img id="logo" alt="FaithFull Food logo" src="../public/images/logo.png"/>
             {/* apple logo --> people page */}
-            <a href=""><img title="Go to: People" id="apple" className="fruit" src="../public/images/fruit/apple.png"/></a>
+            <Link to="/People"><img title="Go to: People" id="apple" className="fruit" src="../public/images/fruit/apple.png"/></Link>
             {/* apricot logo --> projects page */}
-            <a href=""><img title="Go to: Projects" id="apricot" className="fruit" src="../public/images/fruit/apricot.png"/></a>
+            <Link to="/Projects"><img title="Go to: Projects" id="apricot" className="fruit" src="../public/images/fruit/apricot.png"/></Link>
             {/* banana logo --> purpose page */}
-            <a href=""><img title="Go to: Purpose" id="banana" className="fruit" src="../public/images/fruit/banana.png"/></a>
+            <Link to="/Purpose"><img title="Go to: Purpose" id="banana" className="fruit" src="../public/images/fruit/banana.png"/></Link>
             {/* berry logo --> places page */}
-            <a href=""><img title="Go to: Places" id="berry" className="fruit" src="../public/images/fruit/berry.png"/></a>
+            <Link to="/Places"><img title="Go to: Places" id="berry" className="fruit" src="../public/images/fruit/berry.png"/></Link>
             {/* grapes logo --> play your part page */}
-            <a href=""><img title="Go to: Play Your Part" id="grapes" className="fruit" src="../public/images/fruit/grapes.png"/></a>
+            <Link to="/PlayYourPart"><img title="Go to: Play Your Part" id="grapes" className="fruit" src="../public/images/fruit/grapes.png"/></Link>
         </div>
 
         {/* HOME PAGE */}
