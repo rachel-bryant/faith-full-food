@@ -5,6 +5,7 @@ function Purpose() {
     return (
         <>
         <Navbar />
+        <h1>Purpose</h1>
         </>
     )
 }

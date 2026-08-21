@@ -5,6 +5,7 @@ function Places() {
     return (
         <>
         <Navbar />
+        <h1>Places</h1>
         </>
     )
 }

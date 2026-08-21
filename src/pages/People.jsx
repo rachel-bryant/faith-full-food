@@ -5,6 +5,7 @@ function People() {
     return (
         <>
         <Navbar />
+        <h1>People</h1>
         </>
     )
 }

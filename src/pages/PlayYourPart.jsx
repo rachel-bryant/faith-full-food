@@ -5,6 +5,7 @@ function PlayYourPart() {
     return (
         <>
         <Navbar />
+        <h1>Play Your Part</h1>
         </>
     )
 }
