@@ -1,56 +1,58 @@
+import { Link } from 'react-router-dom';
+
 function Navbar() {
     return (
         <>
         <header>
             <div id="nav-bar">
-                <a href="./index.html" className="nav-link">Home</a>
+                <Link to="/" className="nav-link home-link">Home</Link>
                 {/* people section */}
                 <div id="people-dropdown">
-                    <a id="people-link" class="nav-link">People</a>
+                    <div className="nav-link">People</div>
                     <div id="people-dropdown-content">
-                        <a href="" className="dropdown-link">Board of Directors</a>
-                        <a href="" className="dropdown-link">Co-Founding Team</a>
-                        <a href="" className="dropdown-link">Food Entrepreneurs</a>
-                        <a href="" className="dropdown-link">Partners</a>
-                        <a href="" className="dropdown-link">Fellows</a>
+                        <Link to="/People" className="dropdown-link">Board of Directors</Link>
+                        <Link to="/People" className="dropdown-link">Co-Founding Team</Link>
+                        <Link to="/People" className="dropdown-link">Food Entrepreneurs</Link>
+                        <Link to="/People" className="dropdown-link">Partners</Link>
+                        <Link to="/People" className="dropdown-link">Fellows</Link>
                     </div>
                 </div>
                 {/* projects section */}
                 <div id="projects-dropdown">
-                    <a className="nav-link">Projects</a>
+                    <div className="nav-link">Projects</div>
                     <div id="projects-dropdown-content">
-                        <a href="" className="dropdown-link">Fellows Program</a>
-                        <a href="" className="dropdown-link">Foodies</a>
-                        <a href="" className="dropdown-link">Cornerstone Conversions</a>
-                        <a href="" className="dropdown-link">The Collective Narrative Project</a>
-                        <a href="" className="dropdown-link">De-CCC</a>
+                        <Link to="/Projects" className="dropdown-link">Fellows Program</Link>
+                        <Link to="/Projects" className="dropdown-link">Foodies</Link>
+                        <Link to="/Projects" className="dropdown-link">Cornerstone Conversions</Link>
+                        <Link to="/Projects" className="dropdown-link">The Collective Narrative Project</Link>
+                        <Link to="/Projects" className="dropdown-link">De-CCC</Link>
                     </div>
                 </div>
                 {/* purpose section */}
                 <div id="purpose-dropdown">
-                    <a href="" className="nav-link">Purpose</a>
+                    <div className="nav-link">Purpose</div>
                     <div id="purpose-dropdown-content">
-                        <a href="" className="dropdown-link">The Collective Narrative Project</a>
-                        <a href="" className="dropdown-link">Scripture & Contemporary Wisdom</a>
-                        <a href="" className="dropdown-link">Carolyn's Weekly Letter</a>
+                        <Link to="/Purpose" className="dropdown-link">The Collective Narrative Project</Link>
+                        <Link to="/Purpose" className="dropdown-link">Scripture & Contemportary Wisom</Link>
+                        <Link to="/Purpose" className="dropdown-link">Carolyn's Weekly Letter</Link>
                     </div>
                 </div>
                 {/* places section */}
                 <div id="places-dropdown">
-                    <a href="" className="nav-link">Places</a>
+                    <div className="nav-link">Places</div>
                     <div id="places-dropdown-content">
-                        <a href="" className="dropdown-link">Newport St Retreat</a>
-                        <a href="" className="dropdown-link">UPark UMC</a>
+                        <Link to="/Places" className="dropdown-link">Newport St Retreat</Link>
+                        <Link to="/Places" className="dropdown-link">UPark UMC</Link>
                     </div>
                 </div>
                 {/* play your part section */}
                 <div id="part-dropdown">
-                    <a href="" className="nav-link">Play Your Part</a>
+                    <div className="nav-link">Play Your Part</div>
                     <div id="part-dropdown-content">
-                        <a href="" className="dropdown-link">Donations</a>
-                        <a href="" className="dropdown-link">Merchandise</a>
-                        <a href="" className="dropdown-link">Sign Up to Help</a>
-                        <a href="" className="dropdown-link">Newsletter Sign Up</a>
+                        <Link to="/PlayYourPart" className="dropdown-link">Donations</Link>
+                        <Link to="/PlayYourPart" className="dropdown-link">Merchandise</Link>
+                        <Link to="/PlayYourPart" className="dropdown-link">Sign Up to Help</Link>
+                        <Link to="/PlayYourPart" className="dropdown-link">Newsletter Sign Up</Link>
                     </div>
                 </div>
             </div>
