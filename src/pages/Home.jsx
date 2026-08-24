@@ -1,5 +1,6 @@
 import '../styles.css';
 import Navbar from '../components/Navbar.jsx';
+import Footer from '../components/Footer.jsx';
 import { Link } from 'react-router-dom';
 
 function Home() {
@@ -34,6 +35,7 @@ function Home() {
                 <p>Generating relationships that: feed, create, and grow faith in the greater good.</p>
             </div>
         </div>
+        <Footer/>
         </>
     );
 }

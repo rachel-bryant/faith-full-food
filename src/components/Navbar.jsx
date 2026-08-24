@@ -10,11 +10,11 @@ function Navbar() {
                 <div id="people-dropdown">
                     <div className="nav-link">People</div>
                     <div id="people-dropdown-content">
-                        <Link to="/People" className="dropdown-link">Board of Directors</Link>
-                        <Link to="/People" className="dropdown-link">Co-Founding Team</Link>
-                        <Link to="/People" className="dropdown-link">Food Entrepreneurs</Link>
-                        <Link to="/People" className="dropdown-link">Partners</Link>
+                        <Link to="/People" className="dropdown-link">Co-Founders & Founding Team</Link>
+                        <Link to="/People" className="dropdown-link">Food Entrepreneurs (FoodE’s)</Link>
                         <Link to="/People" className="dropdown-link">Fellows</Link>
+                        <Link to="/People" className="dropdown-link">Partners</Link>
+                        <Link to="/People" className="dropdown-link">Board</Link>
                     </div>
                 </div>
                 {/* projects section */}
@@ -32,7 +32,6 @@ function Navbar() {
                 <div id="purpose-dropdown">
                     <div className="nav-link">Purpose</div>
                     <div id="purpose-dropdown-content">
-                        <Link to="/Purpose" className="dropdown-link">The Collective Narrative Project</Link>
                         <Link to="/Purpose" className="dropdown-link">Scripture & Contemportary Wisom</Link>
                         <Link to="/Purpose" className="dropdown-link">Carolyn's Weekly Letter</Link>
                     </div>
