@@ -1,6 +1,24 @@
 import { Link } from 'react-router-dom';
+import { useEffect } from "react";
 
 function Navbar() {
+    useEffect(() => {
+        const nav = document.getElementById("nav-bar");
+        const spacer = document.getElementById("spacer");
+
+        const updateSpacer = () => {
+            spacer.style.height = `${nav.offsetHeight + 30}px`;
+        }
+        updateSpacer();
+
+        // when the nav height changes, update the spacer height
+        const observer = new ResizeObserver(updateSpacer);
+        // the observer is watching the nav bar
+        observer.observe(nav); 
+
+        return () => observer.disconnect();
+    }, []);
+
     return (
         <>
         <header>
