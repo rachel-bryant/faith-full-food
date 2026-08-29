@@ -27,12 +27,12 @@ function Home() {
             {/* vision */}
             <div id="vision">
                 <h1>Our Vision</h1>
-                <p>To grow a loving and peaceful planet where anyone, anywhere can walk to nourish body and soul.</p>
+                <p>To grow a <span className="bold">loving and peaceful planet</span> where anyone, anywhere can walk to <span className="bold">nourish body and soul</span>.</p>
             </div>
             {/* values */}
             <div id="values">
                 <h1>Values</h1>
-                <p>Generating relationships that: feed, create, and grow faith in the greater good.</p>
+                <p>Generating relationships that: <span className="bold">feed</span>, <span className="bold">create</span>, and <span className="bold">grow faith</span> in the greater good.</p>
             </div>
         </div>
         <Footer/>
