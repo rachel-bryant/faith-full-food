@@ -1,6 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;700&display=swap'); /* Roboto Slab */
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue:wght@400;700&display=swap'); /* Bebas Neue */
+@font-face {
+    font-family: Minoria;
+    src: url("../public/fonts/Minoria.ttf");
+}
 
+@font-face {
+    font-family: Nunito;
+    src: url("../public/fonts/Nunito.ttf");
+}
 
 /* GENERAL STYLING */
 body {
@@ -16,20 +22,20 @@ body {
 }
 
 h1 {
-    font-family: Bebas Neue;
+    font-family: Minoria;
     font-size: 37px;
     color: #3E5E20;
     transition: 0.3s;
 }
 
 h2 {
-    font-family: Bebas Neue;
+    font-family: Minoria;
     font-size: 34px;
     color: #3E5E20;
 }
 
 p {
-    font-family: Roboto Slab;
+    font-family: Nunito;
     font-size: 18px;
     color: #362314;
 }
@@ -67,7 +73,7 @@ p {
     background: rgba(255, 255, 255, 0.2);
     padding: 8px 15px;
     border-radius: 5px;
-    font-family: 'Roboto Slab';
+    font-family: Nunito;
     font-size: 18px;
     outline: none;
     transition: 0.3s ease;
@@ -160,24 +166,49 @@ p {
 }
 
 /* HOME PAGE STYLING */
-#vision-and-values {
+.mission {
     display: flex;
-    justify-content: space-evenly;
-    margin-bottom: 30px;
+    justify-content: center;
+    align-items: baseline;
+    flex-wrap: wrap;
+    gap: 0 10px;
 }
 
-#vision, #values {
-    width: 45%;
+.mission h1 {
+    margin-bottom: 0;
+}
+
+.mission p {
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+
+#home-sections {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.home-section {
+    width: 500px;
     background: rgba(129, 166, 50, 0.5);
     padding: 10px;
+    margin: 10px 10px 10px 10px;
     transition: 0.3s;
+    box-sizing: border-box;
+    text-align: center;
 }
 
-#vision:hover, #values:hover {
+.home-section h1 {
+    text-align: center;
+}
+
+.home-section:hover {
     background: rgba(129, 166, 50, 0.75);
 }
 
-#vision:hover h1, #values:hover h1 {
+.home-section:hover h1 {
     font-size: 40px;
 }
 
@@ -186,7 +217,7 @@ p {
     transition: 0.3s;
 }
 
-#vision:hover .bold, #values:hover .bold {
+.home-section:hover .bold {
     font-size: 20px;
     color: #FFFFFF;
 }
@@ -271,6 +302,7 @@ p {
 .external-link {
     color: #FFFFFF;
     font-size: 28px;
+    font-family: Nunito;
 }
 
 #instagram {
@@ -281,6 +313,26 @@ p {
 #instagram:hover {
     animation: instagramColors 4s ease infinite;
     font-size: 30px;
+}
+
+.sign-up-btn {
+    background: #3E5E20;
+    display: block;
+    width: fit-content;
+    color: #FFFFFF;
+    font-family: Nunito;
+    padding: 5px 10px 5px 10px;
+    font-size: 18px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    transition: 0.3s;
+}
+
+.sign-up-btn:hover {
+    font-size: 20px;
+    font-weight: 700;
 }
 
 /* PEOPLE COMPONENT */
@@ -397,21 +449,6 @@ p {
     .nav-link, .dropdown-link {
         font-size: 15px;
         padding: 6px 10px;
-    }
-
-    /* VISION AND VALUES */
-    #vision-and-values {
-        flex-direction: column;
-        text-align: center;
-        gap: 20px;
-        margin: 0px 20px;
-        margin-top: 10px;
-        margin-bottom: 30px;
-    }
-
-    #vision, #values {
-        width: 100%;
-        box-sizing: border-box;
     }
 
     /* PERSON SECTION */
