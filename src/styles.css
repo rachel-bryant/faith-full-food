@@ -22,6 +22,12 @@ h1 {
     transition: 0.3s;
 }
 
+h2 {
+    font-family: Bebas Neue;
+    font-size: 34px;
+    color: #3E5E20;
+}
+
 p {
     font-family: Roboto Slab;
     font-size: 18px;
@@ -290,8 +296,8 @@ p {
     box-sizing: border-box;
     background: rgba(129, 166, 50, 0.5);
     padding: 20px 30px;
-    margin-bottom: 30px;
-    flex: 0 0 calc(50% - 10px);
+    margin-bottom: 10px;
+    flex: 0 0 calc(30% - 10px);
     border-radius: 10px;
 }
 
@@ -302,20 +308,49 @@ p {
     gap: 0 50px;
 }
 
+.people-section-header {
+    margin: 10px auto 5px auto;
+    font-size: 45px;
+    scroll-margin-top: 100px;
+}
+
+.people-section-subheader {
+    margin: 0 auto 20px auto;
+    font-weight: 50;
+}
+
+.top-margin-text {
+    margin-top: 20px;
+}
+
 .headshot {
     width: 150px;
     height: 150px;
     object-fit: cover;
     border-radius: 100px;
-    border: 2px solid #3E5E20;
+    border: 3px solid #3E5E20;
+    margin-bottom: -5px;
+    transition: 0.3s;
+}
+
+.headshot:hover {
+    border-width: 5px;
+    width: 153px;
+    height: 153px;
 }
 
 .name {
     display: flex;
     align-items: center;
     color: #3E5E20;
-    font-weight: 700;
     font-size: 30px;
+    margin-bottom: 5px;
+    transition: 0.3s;
+}
+
+.name:hover {
+    font-weight: bold;
+    font-size: 32px;
 }
 
 .description {
@@ -331,6 +366,23 @@ p {
 .description:hover {
     background: #3e5e20c9;
     color: #FFFFFF;
+}
+
+
+
+/* specific styling for shifting screen sizes */
+@media (max-width: 850px) {
+    /* PERSON SECTION */
+    .person {
+        flex: 0 0 calc(50% - 10px);
+    }
+}
+
+@media (max-width: 670px) { 
+    /* PERSON SECTION */
+    .person {
+        flex: 0 0 95%;
+    }
 }
 
 /* styling for mobile devices */
@@ -360,6 +412,11 @@ p {
     #vision, #values {
         width: 100%;
         box-sizing: border-box;
+    }
+
+    /* PERSON SECTION */
+    .person {
+        flex: 0 0 95%;
     }
 
     /* FOOTER */

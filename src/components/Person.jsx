@@ -1,12 +1,14 @@
-function Person({ photo, name, description }) {
+function Person({ photo, name, description, className }) {
     return (
         <>
-        <div className="person">
+        <div className={`person ${ className || '' }`}>
             <section className="person-header">
-                <img className="headshot" src={photo}/>
-                <p className="name">{name}</p>
+                <img className="headshot" src={photo} onError={(e) => {
+                    e.currentTarget.src = '../public/images/headshots/default.jpeg'
+                }}/>
+                <p className="name">{name || 'Name'}</p>
             </section>
-            <p className="description">{description}</p>
+            <p className="description">{description || 'description'}</p>
         </div>
         </>
     )

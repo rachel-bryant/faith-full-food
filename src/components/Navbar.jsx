@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom';
+import { HashLink } from 'react-router-hash-link';
 import { useEffect } from "react";
 
 function Navbar() {
@@ -28,11 +29,11 @@ function Navbar() {
                 <div id="people-dropdown">
                     <div className="nav-link">People</div>
                     <div id="people-dropdown-content">
-                        <Link to="/People" className="dropdown-link">Co-Founders & Founding Team</Link>
-                        <Link to="/People" className="dropdown-link">Food Entrepreneurs (FoodE’s)</Link>
-                        <Link to="/People" className="dropdown-link">Fellows</Link>
-                        <Link to="/People" className="dropdown-link">Partners</Link>
-                        <Link to="/People" className="dropdown-link">Board</Link>
+                        <HashLink to="/People#co-founders" className="dropdown-link">Co-Founders & Founding Team</HashLink>
+                        <HashLink to="/People#fellows" className="dropdown-link">Fellows</HashLink>
+                        <HashLink to="/People#food-entrepreneurs" className="dropdown-link">Food Entrepreneurs (FoodE’s)</HashLink>
+                        <HashLink to="/People#partners" className="dropdown-link">Partners</HashLink>
+                        <HashLink to="/People#board" className="dropdown-link">Board</HashLink>
                     </div>
                 </div>
                 {/* projects section */}
