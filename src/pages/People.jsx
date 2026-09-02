@@ -6,6 +6,17 @@ function People() {
     return (
         <>
         <Navbar />
+        {/* INTRO TO PEOPLE PAGE */}
+        <div id="people-intro">
+            <h1 className="people-section-header">People</h1>
+            <div className="people-intro-content">
+                <p>We hear a lot about belonging from many places. From the gym to church to the fancy hotel in the Maldives, we’re told, “You Belong Here!” But can belonging really happen when a few decide who should belong?</p>
+            </div>
+            <div className="people-intro-content">
+                <p>At FaithFull Food we’re doing the work to co-create belonging because we know that making the claim is very different than actually making the space. People are our most valuable resource and doing it differently requires us to be comfortable with the rainbow of uniqueness we each carry. FaithFull Food is on a mission to guarantee we all have space to practice, play and come together to grow a better world. </p>
+            </div>
+        </div>
+
         {/* CO-FOUNDING TEAM SECTION */}
         <h1 id="co-founders" className="people-section-header">Co-Founding Team</h1>
         {/* leadership */}
@@ -25,6 +36,13 @@ function People() {
 
         {/* FELLOWS */}
         <h1 id="fellows" className="people-section-header top-margin-text">Fellows</h1>
+        <div className="people-content">
+            <p>With our Walk-Along Partner Churches, we identify and fund Fellows to kick-start connectional ministries that invite and delight young adult faith-seekers and proximal community members to engage and take part in the movement. While many of these young people grow into mission-aligned members of partnered faith spaces, some choose to grow.</p>
+        </div>
+        <div className="people-content">
+            <h2 className="people-content-header">University Park Methodist Church TriGen Fellows</h2>
+            <p>Our Fellowship work at University Park UMC is primarily focused on our work facing the University of Denver and the University Park neighborhood of Denver. We are calling this campus and campus-adjacent ministry “DuFood.” Led by our Fellows, supported by UPark UMC congregants and facilitated by FaithFull Foods programming, this work weaves together communities within the DU corridor by Du-ing food, together for a shared mission and purpose. </p>
+        </div>
         <div className="people-section">
             <Person photo="../public/images/headshots/" name="" description="" />
             <Person photo="../public/images/headshots/" name="" description="" />
