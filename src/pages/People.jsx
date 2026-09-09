@@ -56,10 +56,10 @@ function People() {
         </div>
 
         {/* PARTNERS */}
-        <h1 id="partners" className="people-section-header top-margin-text">Partners</h1>
+        {/* <h1 id="partners" className="people-section-header top-margin-text">Partners</h1>
         <div className="people-section">
             <Person photo="../public/images/headshots/" name="" description="" />
-        </div>
+        </div> */}
 
         {/* BOARD */}
         <h1 id="board" className="people-section-header top-margin-text">Board</h1>

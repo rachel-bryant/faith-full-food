@@ -27,29 +27,29 @@ function Navbar() {
                 <Link to="/" className="nav-link home-link">Home</Link>
                 {/* people section */}
                 <div id="people-dropdown">
-                    <div className="nav-link">People</div>
+                    <div className="nav-link">People&ensp;<img className="small-logo" src="../public/images/fruit/apple.png" /></div>
                     <div id="people-dropdown-content">
                         <HashLink to="/People#co-founders" className="dropdown-link">Co-Founders & Founding Team</HashLink>
                         <HashLink to="/People#fellows" className="dropdown-link">Fellows</HashLink>
                         <HashLink to="/People#food-entrepreneurs" className="dropdown-link">Food Entrepreneurs (FoodE’s)</HashLink>
-                        <HashLink to="/People#partners" className="dropdown-link">Partners</HashLink>
+                        {/* <HashLink to="/People#partners" className="dropdown-link">Partners</HashLink> */}
                         <HashLink to="/People#board" className="dropdown-link">Board</HashLink>
                     </div>
                 </div>
-                {/* projects section */}
+                {/* programs section */}
                 <div id="projects-dropdown">
-                    <div className="nav-link">Projects</div>
+                    <div className="nav-link">Programs&ensp;<img className="small-logo" src="../public/images/fruit/apricot.png" /></div>
                     <div id="projects-dropdown-content">
-                        <Link to="/Projects" className="dropdown-link">Fellows Program</Link>
-                        <Link to="/Projects" className="dropdown-link">Foodies</Link>
-                        <Link to="/Projects" className="dropdown-link">Cornerstone Conversions</Link>
-                        <Link to="/Projects" className="dropdown-link">The Collective Narrative Project</Link>
-                        <Link to="/Projects" className="dropdown-link">De-CCC</Link>
+                        <Link to="/Programs" className="dropdown-link">Fellows Program</Link>
+                        <Link to="/Programs" className="dropdown-link">Foodies</Link>
+                        <Link to="/Programs" className="dropdown-link">Cornerstone Conversions</Link>
+                        <Link to="/Programs" className="dropdown-link">The Collective Narrative Project</Link>
+                        <Link to="/Programs" className="dropdown-link">De-CCC</Link>
                     </div>
                 </div>
                 {/* purpose section */}
                 <div id="purpose-dropdown">
-                    <div className="nav-link">Purpose</div>
+                    <div className="nav-link">Purpose&ensp;<img className="small-logo" src="../public/images/fruit/banana.png" /></div>
                     <div id="purpose-dropdown-content">
                         <Link to="/Purpose" className="dropdown-link">Scripture & Contemportary Wisom</Link>
                         <Link to="/Purpose" className="dropdown-link">Carolyn's Weekly Letter</Link>
@@ -57,7 +57,7 @@ function Navbar() {
                 </div>
                 {/* places section */}
                 <div id="places-dropdown">
-                    <div className="nav-link">Places</div>
+                    <div className="nav-link">Places&ensp;<img className="small-logo" src="../public/images/fruit/berry.png" /></div>
                     <div id="places-dropdown-content">
                         <Link to="/Places" className="dropdown-link">Newport St Retreat</Link>
                         <Link to="/Places" className="dropdown-link">UPark UMC</Link>
@@ -65,7 +65,7 @@ function Navbar() {
                 </div>
                 {/* play your part section */}
                 <div id="part-dropdown">
-                    <div className="nav-link">Play Your Part</div>
+                    <div className="nav-link">Play Your Part&ensp;<img className="small-logo" src="../public/images/fruit/grapes.png" /></div>
                     <div id="part-dropdown-content">
                         <Link to="/PlayYourPart" className="dropdown-link">Donations</Link>
                         <Link to="/PlayYourPart" className="dropdown-link">Merchandise</Link>
