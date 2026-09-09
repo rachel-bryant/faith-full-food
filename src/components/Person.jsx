@@ -1,4 +1,4 @@
-function Person({ photo, name, description, className }) {
+function Person({ photo, name, title, description, className }) {
     return (
         <>
         <div className={`person ${ className || '' }`}>
@@ -8,6 +8,7 @@ function Person({ photo, name, description, className }) {
                 }}/>
                 <p className="name">{name || 'Name'}</p>
             </section>
+            <p className="title">{title || 'Title'}</p>
             <p className="description">{description || 'description'}</p>
         </div>
         </>
