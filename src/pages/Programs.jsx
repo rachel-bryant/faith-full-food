@@ -1,15 +1,15 @@
 import '../styles.css';
-import Navbar from '../components/Navbar';
+import Navbar from '../components/Navbar.jsx';
 import Footer from '../components/Footer.jsx';
 
-function Projects() {
+function Programs() {
     return (
         <>
         <Navbar />
-        <h1>Projects</h1>
+        <h1>Programs</h1>
         <Footer />
         </>
     )
 }
 
-export default Projects;
+export default Programs;

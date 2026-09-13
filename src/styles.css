@@ -9,6 +9,11 @@
     src: url("../public/fonts/Nunito.ttf");
 }
 
+@font-face {
+    font-family: Playpen;
+    src: url("../public/fonts/Playpen.ttf");
+}
+
 /* VARIABLES */
 :root {
     /* MAIN THEME COLORS */
@@ -19,7 +24,7 @@
     /* other main theme colors */
     --pink: 235, 46, 127;
     --brown: 102, 66, 37;
-    --yellow: 222, 196, 0;
+    --blue: 70, 84, 144;
 
     /* neutral colors */
     --white: 255, 255, 255;
@@ -327,7 +332,7 @@ p {
     z-index: 1;
 }
 
-#logo {
+.logo {
     width: 100%;
     max-width: 500px;
     display: block;
@@ -367,13 +372,14 @@ p {
     border-color: var(--apricot);
 }
 
-#banana {
+#blueberry {
     top: 15%;
     left: 31%;
+    border-radius: 50px;
 }
 
-#banana:hover {
-    border-color: var(--banana);
+#blueberry:hover {
+    border-color: var(--blue);
 }
 
 #berry {
@@ -498,6 +504,7 @@ p {
     margin: 10px auto 5px auto;
     font-size: 49px;
     scroll-margin-top: 100px;
+    text-align: center;
 }
 
 .people-section-subheader {
@@ -638,15 +645,17 @@ p {
     font-size: 49px;
     margin-top: 10px;
     margin-bottom: 15px;
-    color: rgb(var(--yellow));
+    color: rgb(var(--blue));
+    scroll-margin-top: 100px;
 }
 
 .purpose-main-img {
     margin: 0 auto;
     width: 85%;
-    border: 4px solid rgb(var(--pink), 0.65);
+    border: 4px solid rgb(var(--blue), 0.65);
     border-radius: 10px;
-    max-width: 800px;
+    max-width: 900px;
+    margin-top: 15px;
     margin-bottom: 15px;
     transition: 0.3s;
 }
@@ -658,10 +667,11 @@ p {
 .purpose-section {
     text-align: center;
     padding: 0 10px;
-    background: rgba(var(--yellow), 0.5);
-    border-top: 3px solid rgba(var(--yellow), 0.75);
-    border-bottom: 3px solid rgba(var(--yellow), 0.75);
-    margin-bottom: 15px;
+    background: rgba(var(--blue), 0.5);
+    border-top: 3px solid rgba(var(--blue), 0.75);
+    border-bottom: 3px solid rgba(var(--blue), 0.75);
+    margin: 10px 0;
+    padding: 0 35px;
 }
 
 .purpose-section:hover .bold {
@@ -669,11 +679,123 @@ p {
     font-size: 25px;
 }
 
+#tree-section {
+    display: flex;
+    flex-wrap: nowrap;
+    margin: 40px 10px;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 15px;
+}
+
+.plot-logo {
+    width: 55%;
+    height: auto;
+    max-width: 500px;
+    aspect-ratio: 10/9;
+    flex-shrink: 0;
+}
+
+.tree-purpose {
+    background: rgba(var(--blue), 0.5);
+    border: 3px solid rgba(var(--blue), 0.75);
+    border-radius: 10px;
+    flex: 1;
+    max-width: 600px;
+    min-height: 425px;
+    display: flex;
+    align-items: center;
+}
+
+.tree-purpose p {
+    line-height: 7.5cqh;
+    font-size: 25px;
+}
+
+/* quotes */
+.quote-container {
+    background: rgba(var(--blue), 0.25);
+    border-top: 3px solid rgba(var(--blue), 0.5);
+    border-bottom: 3px solid rgba(var(--blue), 0.5);
+    text-align: center;
+    margin: 10px 0;
+    padding: 0 15px;
+}
+
+.quote-container:hover .quote {
+    font-size: 24px;
+}
+
+.quote-container:hover .author {
+    color: rgb(var(--blue));
+}
+
+.quote {
+    font-style: italic;
+    transition: 0.3s;
+}
+
+.dash {
+    font-style: normal;
+}
+
+.author {
+    font-weight: bold;
+    font-style: normal;
+    transition: 0.3s;
+}
+
+#letter {
+    width: 90%;
+    max-width: 550px;
+    height: auto;
+    aspect-ratio: 8.5/10;
+    background: repeating-linear-gradient(180deg, #EAF0F1 0px, #EAF0F1 40px, #B1C0D4 41px, #B1C0D4 42px);
+    margin: 0 auto 20px auto;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
+    padding: 15px 20px;
+    line-height: 42px;
+}
+
+#letter-text {
+    font-size: 28px;
+    font-family: Playpen;
+}
+
 /* specific styling for shifting screen sizes */
 @media (max-width: 850px) {
     /* PERSON SECTION */
     .person {
         flex: 0 0 calc(50% - 10px);
+    }
+}
+
+@media (max-width: 830px) {
+    /* PURPOSE SECTION */
+    #tree-section {
+        display: block;
+        text-align: center;
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    .plot-logo {
+        width: 90%;
+    }
+
+    .tree-purpose {
+        margin: 20px 0;
+        width: 100%;
+        max-width: 100%;
+        border-radius: 0;
+        border-left: none;
+        border-right: none;
+        min-height: 0;
+        box-sizing: border-box;
+    }
+
+    .tree-purpose p {
+        line-height: 6.5cqh;
     }
 }
 

@@ -49,10 +49,10 @@ function Navbar() {
                 </div>
                 {/* purpose section */}
                 <div id="purpose-dropdown">
-                    <div className="nav-link">Purpose&ensp;<img className="small-logo" src="../public/images/fruit/banana.png" /></div>
+                    <div className="nav-link">Plot&ensp;<img className="small-logo" src="../public/images/fruit/blueberry.png" /></div>
                     <div id="purpose-dropdown-content">
-                        <Link to="/Purpose" className="dropdown-link">Scripture & Contemportary Wisom</Link>
-                        <Link to="/Purpose" className="dropdown-link">Carolyn's Weekly Letter</Link>
+                        <HashLink to="/Plot#scripture" className="dropdown-link">Scripture & Contemportary Wisom</HashLink>
+                        <HashLink to="/Plot#weekly-letter" className="dropdown-link">Carolyn's Weekly Letter</HashLink>
                     </div>
                 </div>
                 {/* places section */}

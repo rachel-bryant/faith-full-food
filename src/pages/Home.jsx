@@ -9,13 +9,13 @@ function Home() {
         <Navbar />
         {/* tree logo */}
         <div id="nav-logo">
-            <img id="logo" alt="FaithFull Food logo" src="../public/images/logo.png"/>
+            <img className="logo" alt="FaithFull Food logo" src="../public/images/logo.png"/>
             {/* apple logo --> people page */}
             <Link to="/People"><img title="Go to: People" id="apple" className="fruit" src="../public/images/fruit/apple.png"/></Link>
             {/* apricot logo --> projects page */}
-            <Link to="/Projects"><img title="Go to: Projects" id="apricot" className="fruit" src="../public/images/fruit/apricot.png"/></Link>
+            <Link to="/Programs"><img title="Go to: Programs" id="apricot" className="fruit" src="../public/images/fruit/apricot.png"/></Link>
             {/* banana logo --> purpose page */}
-            <Link to="/Purpose"><img title="Go to: Purpose" id="banana" className="fruit" src="../public/images/fruit/banana.png"/></Link>
+            <Link to="/Plot"><img title="Go to: Plot" id="blueberry" className="fruit" src="../public/images/fruit/blueberry.png"/></Link>
             {/* berry logo --> places page */}
             <Link to="/Places"><img title="Go to: Places" id="berry" className="fruit" src="../public/images/fruit/berry.png"/></Link>
             {/* grapes logo --> play your part page */}
