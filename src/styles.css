@@ -25,6 +25,7 @@
     --pink: 235, 46, 127;
     --brown: 102, 66, 37;
     --blue: 70, 84, 144;
+    --orange: 223, 121, 78;
 
     /* neutral colors */
     --white: 255, 255, 255;
@@ -491,13 +492,11 @@ p {
     margin-bottom: 10px;
     flex: 0 0 calc(30% - 10px);
     border-radius: 10px;
+    max-width: 95%;
 }
 
 .person-header {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 0 50px;
+    text-align: center;
 }
 
 .people-section-header {
@@ -533,11 +532,11 @@ p {
 }
 
 .name {
-    display: flex;
     text-align: center;
     color: rgb(var(--dark-green));
     font-size: 34px;
     margin-bottom: 5px;
+    margin-top: 10px;
     transition: 0.3s;
 }
 
@@ -548,7 +547,7 @@ p {
 
 .title {
     font-size: 24px;
-    margin: 5px 0;
+    margin: 15px 0;
     text-align: center;
     color: rgb(var(--dark-green));
     transition: 0.3s;
@@ -637,6 +636,45 @@ p {
 .play-btn:hover {
     font-size: 54px;
     background: rgba(var(--black), 0.75);
+}
+
+.orange-person {
+    background: rgba(var(--orange), 0.25);
+}
+
+.orange-person .name, .orange-person .title {
+    color: rgb(var(--orange));
+}
+
+.orange-person .headshot, .orange-person .description {
+    border-color: rgb(var(--orange));
+}
+
+.orange-person .description {
+    background: rgba(var(--orange), 0.25);
+}
+
+.orange-person .description:hover {
+    background: rgba(var(--orange), 0.75);
+}
+
+.podcast-label {
+    font-family: Nunito;
+    font-size: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    background: rgba(var(--orange), 0.25);
+    border: 2px solid rgb(var(--orange));
+    border-radius: 40px;
+    padding: 5px 10px;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+}
+
+audio {
+    max-width: 300px;
 }
 
 /* PURPOSE SECTION */
@@ -762,6 +800,90 @@ p {
     font-family: Playpen;
 }
 
+/* PROGRAMS */
+.programs-header {
+    text-align: center;
+    font-size: 49px;
+    color: rgb(var(--orange));
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+
+.programs-subheader {
+    font-size: 41px;
+    color: rgb(var(--orange));
+    text-align: center;
+}
+
+.project {
+    border-top: 3px solid rgba(var(--orange), 0.75);
+    border-bottom: 3px solid rgba(var(--orange), 0.75);
+    background: rgba(var(--orange), 0.25);
+    margin: 10px 0;
+    padding: 0 20px;
+}
+
+.project-title {
+    color: rgb(var(--orange));
+    text-align: center;
+}
+
+.project-desc {
+    text-align: center;
+}
+
+.programs-img {
+    margin: 0 auto;
+    width: 85%;
+    border: 4px solid rgb(var(--orange), 0.65);
+    border-radius: 10px;
+    max-width: 900px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    transition: 0.3s;
+}
+
+.programs-img:hover {
+    border-width: 6px;
+}
+
+.programs-email {
+    color: rgb(var(--orange));
+}
+
+#programs-book {
+    aspect-ratio: 11/7;
+    width: 75%;
+    max-width: 800px;
+    background: black;
+    margin: 15px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgb(var(--orange));
+    overflow: hidden;
+    perspective: 1500px;
+}
+
+#programs-book .book-page {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+    transform-origin: left center;
+    animation: pageFlip 0.6s ease-in;
+}
+
+@keyframes pageFlip {
+    0% {
+        transform: rotateY(0deg);
+        opacity:0;
+    }
+    100% {
+        transform: rotateY(-100deg);
+        opacity:100;
+    }
+}
+
 /* specific styling for shifting screen sizes */
 @media (max-width: 850px) {
     /* PERSON SECTION */
@@ -846,5 +968,10 @@ p {
     /* TREE LOGO */
     .fruit {
         width: 8%;
+    }
+
+    /* PODCAST */
+    .podcast-label {
+        padding: 15px 10px;
     }
 }

@@ -1,4 +1,4 @@
-function Person({ photo, name, title, description, className }) {
+function Person({ photo, name, title, description, className, podcast, podcast2 }) {
     return (
         <>
         <div className={`person ${ className || '' }`}>
@@ -8,8 +8,10 @@ function Person({ photo, name, title, description, className }) {
                 }}/>
                 <p className="name">{name || 'Name'}</p>
             </section>
-            <p className="title">{title || 'Title'}</p>
+            <p className="title">{(title)}</p>
             <p className="description">{description || 'description'}</p>
+            {podcast && <label className="podcast-label">Podcast:<audio src={podcast} controls/></label>}
+            {podcast2 && <label className="podcast-label">Part 2:<audio src={podcast2} controls/></label>}
         </div>
         </>
     )
