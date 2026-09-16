@@ -10,10 +10,7 @@ function Programs() {
     const [page, setPage] = useState(0);
 
     function flipPage() {
-        setPage(page + 1);
-        if (page == 10) {
-            setPage(0);
-        }
+        setPage((page + 1) % book_images.length);
     }
 
     return (
@@ -21,7 +18,7 @@ function Programs() {
         <Navbar />
         <h1 className="programs-header">Programs</h1>
         {/* collective narrative project */}
-        <img className="programs-img" src="../public/images/programs/CNP.png" />
+        <img id="cnp" className="programs-img" src="../public/images/programs/CNP.png" />
         <Project title="Collective Narrative Project" desc="The Collective Narrative Project is FaithFull Food’s podcast and a dynamic reminder that we all have a role to play in the story of the future of our planet. From faith to profession, from childhood to now, we meet various stakeholders with the FaithFull Food movement and get to know how faith and food connect within each of us to grow our part of the story of now. Check our our latest episode here and check out our library for other episodes!"/>
         <h1 className="programs-subheader">CNP People</h1>
         <div className="people-section">
@@ -33,11 +30,11 @@ function Programs() {
             <Person photo="../public/images/headshots/Embra.png" name="Embra Daylie" description="Embra Daylie has been a member of University Park United Methodist Church for more than two decades and has long been committed to strengthening communities through food and service. Inspired by his work with Agape and alongside Carolyn Tarr, he helped launch a community grow program that fostered connection and shared purpose. Today, he co-leads FaithFull Food, continuing to cultivate partnerships that nourish both people and neighborhoods." podcast="../public/audio/embra_podcast.mp3" className="orange-person"/>
         </div>
         {/* DO FOOD */}
-        <img src="../images/programs/do-food.png" className="programs-img do-food" />
+        <img id="do-food" src="../images/programs/do-food.png" className="programs-img do-food" />
         <Project title="Do Food" desc="Do Food is FaithFull Food’s campus ministry program brand. We walk alongside churches and organizations that are campus adjacent to seed and grow new ministry that grows faith and fellowship by doing food. By rebranding, we support church’s abilities to grow faith in action with, by and for young people. "/>
         {/* gallery goes here */}
         {/* CORNERSTONE CONVERSIONS */}
-        <img src="../images/programs/book/cover.png" className="programs-img" />
+        <img id="cornerstone" src="../images/programs/book/cover.png" className="programs-img" />
         <Project title="Cornerstone Conversions" desc={
             <>Through our Food Forest work at the Newport Street Retreat, we’ve learned that transforming church corners into living cornerstones is a vibrant and dynamic way to invite the surrounding community into the food work within. If you’re interested in advisement, committee facilitation or project management of a conversion, please reach out to &nbsp;
             <a className="programs-email" href="mailto:info@FaithFull.Food">info@FaithFull.Food</a> 
@@ -46,8 +43,10 @@ function Programs() {
             <img key={page} className="book-page" src={"../public/images/programs/book/" + book_images[page]} />
         </div>
         {/* HYDROPONICS */}
+        <img id="hydroponics" src="../images/programs/" className="programs-img" />
         <Project title="Hydroponics" desc="We are learning an indoor grow project at University Park UMC. The first of its kind, this project aspires to connect disparate yet proximal communities within the building to provide year-round produce for our neighbors in need. Please reach out if you are interested in learning more, or if your church would like to join our first cohort of hydroponic churches, launching in early 2027. "/>
         {/* GROWING CHURCH CULTURE */}
+        <img id="culture" src="../images/programs/" className="programs-img" />
         <Project title="Growing Church Culture" desc="In order to bridge generational divides and divides between those within and outside of church spaces, FaithFull Food is creating a series of workshops, courses and retreats to help prepare churches to integrate and manage new projects. These courses face church committees and congregants who are hungry for vitality, yet struggle with attracting and integrating new ideas and ways of doing within their congregations. We will be launching the pilot of this work in early 2027. Please reach out if you are interested in participating. " />
         <Footer />
         </>

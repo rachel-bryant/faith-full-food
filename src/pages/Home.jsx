@@ -53,13 +53,13 @@ function Home() {
 
         
         {/* GET INVOLVED */}
-        <div id="get-involved">
+        <div className="get-involved">
             <div className="home-main">
                 <h1>Get Involved</h1>
                 <p>This is a growing movement and the best ideas come when people see themselves as a part of this thing. Whether you want to donate time, resources or finances, we want you to root into hope and grow this movement with us!</p>
             </div>
 
-            <div id="home-sections">
+            <div className="home-sections">
                 {/* VOLUNTEER */}
                 <div className="home-section">
                     <h1>Volunteer</h1>
@@ -77,6 +77,7 @@ function Home() {
                 <div className="home-section">
                     <h1>Connect</h1>
                     <p>Have a great idea or looking to get more involved? Whether church, young adult, entrepreneur or beyond, we need you! Let us know what you’re thinking so we can weave you and your spirit into this movement. </p>
+                    <a className="home-email" href="mailto:info@FaithFull.Food">info@FaithFull.Food</a>
                 </div>
             </div>
         </div>

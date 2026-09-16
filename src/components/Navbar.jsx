@@ -40,11 +40,11 @@ function Navbar() {
                 <div id="projects-dropdown">
                     <div className="nav-link">Programs&ensp;<img className="small-logo" src="../public/images/fruit/apricot.png" /></div>
                     <div id="projects-dropdown-content">
-                        <Link to="/Programs" className="dropdown-link">Fellows Program</Link>
-                        <Link to="/Programs" className="dropdown-link">Foodies</Link>
-                        <Link to="/Programs" className="dropdown-link">Cornerstone Conversions</Link>
-                        <Link to="/Programs" className="dropdown-link">The Collective Narrative Project</Link>
-                        <Link to="/Programs" className="dropdown-link">De-CCC</Link>
+                        <HashLink to="/Programs#cnp" className="dropdown-link">The Collective Narrative Project</HashLink>
+                        <HashLink to="/Programs#do-food" className="dropdown-link">Do Food</HashLink>
+                        <HashLink to="/Programs#cornerstone" className="dropdown-link">Cornerstone Conversions</HashLink>
+                        <HashLink to="/Programs#hydroponics" className="dropdown-link">Hydroponics</HashLink>
+                        <HashLink to="/Programs#culture" className="dropdown-link">Growing Church Culture</HashLink>
                     </div>
                 </div>
                 {/* purpose section */}
@@ -56,21 +56,20 @@ function Navbar() {
                     </div>
                 </div>
                 {/* places section */}
-                <div id="places-dropdown">
+                {/* <div id="places-dropdown">
                     <div className="nav-link">Places&ensp;<img className="small-logo" src="../public/images/fruit/berry.png" /></div>
                     <div id="places-dropdown-content">
                         <Link to="/Places" className="dropdown-link">Newport St Retreat</Link>
                         <Link to="/Places" className="dropdown-link">UPark UMC</Link>
                     </div>
-                </div>
+                </div> */}
                 {/* play your part section */}
                 <div id="part-dropdown">
                     <div className="nav-link">Play Your Part&ensp;<img className="small-logo" src="../public/images/fruit/grapes.png" /></div>
                     <div id="part-dropdown-content">
-                        <Link to="/PlayYourPart" className="dropdown-link">Donations</Link>
-                        <Link to="/PlayYourPart" className="dropdown-link">Merchandise</Link>
-                        <Link to="/PlayYourPart" className="dropdown-link">Sign Up to Help</Link>
-                        <Link to="/PlayYourPart" className="dropdown-link">Newsletter Sign Up</Link>
+                        <HashLink to="/PlayYourPart#volunteer" className="dropdown-link">Volunteer</HashLink>
+                        <HashLink to="/PlayYourPart#give" className="dropdown-link">Give</HashLink>
+                        <HashLink to="/PlayYourPart#connect" className="dropdown-link">Connect</HashLink>
                     </div>
                 </div>
             </div>
