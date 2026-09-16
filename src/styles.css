@@ -568,12 +568,18 @@ p {
     margin-top: 20px;
 }
 
-.headshot {
+.headshot-wrapper {
     width: 150px;
     height: 150px;
-    object-fit: cover;
     border-radius: 100px;
     border: 3px solid rgb(var(--dark-red));
+    overflow:hidden;
+    margin: 0 auto;
+}
+
+.headshot {
+    height: 150px;
+    object-fit: cover;
     margin-bottom: -5px;
     transition: 0.3s;
 }
@@ -686,7 +692,7 @@ p {
     color: rgb(var(--orange));
 }
 
-.orange-person .headshot, .orange-person .description {
+.orange-person .headshot-wrapper, .orange-person .description {
     border-color: rgb(var(--orange));
 }
 
@@ -712,6 +718,39 @@ p {
 
 audio {
     max-width: 300px;
+}
+
+/* specific people */
+#gabbi {
+    transform: translateX(-100px);
+}
+
+#lauren {
+    transform: translateX(-20px);
+}
+
+#embra {
+    transform: translateX(20px) scale(2.9);
+}
+
+#ben {
+    transform: translateX(-65px);
+}
+
+#alycea {
+    transform: scale(1.4) translateY(10px);
+}
+
+#owen {
+    transform: scale(1.25) translateY(5px);
+}
+
+#jon {
+    transform: scale(2) translateY(-5px);
+}
+
+#bethany {
+    transform: scale(1.35) translateY(22px);
 }
 
 /* PURPOSE SECTION */
@@ -891,12 +930,17 @@ audio {
 }
 
 /* book */
-#programs-book {
-    aspect-ratio: 11/7;
+#book-wrapper {
+    position: relative;
     width: 75%;
     max-width: 800px;
-    background: rgb(var(--orange));
     margin: 15px auto;
+}
+
+#programs-book {
+    aspect-ratio: 11/7;
+    width: 100%;
+    background: rgb(var(--orange));
     display: flex;
     align-items: center;
     justify-content: center;
@@ -913,10 +957,80 @@ audio {
 
 @keyframes pageFade {
     from {
-        opacity: 0.25;
+        transform: translateX(30px);
+        opacity: 0.5;
     }
     to {
+        transform: translateX(0);
         opacity: 1;
+    }
+}
+
+#rings {
+    position: absolute;
+    height: 105%;
+    width: auto;
+    right: 67%;
+    transform: translateY(-10px);
+    top: 0;
+}
+
+/* gallery */
+#do-food-gallery {
+    width: 100%;
+    background: rgb(var(--orange));
+    height: 500px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    max-width: 800px;
+}
+
+.gallery-btn {
+    position: absolute;
+    background: rgba(0, 0, 0, 0);
+    border: none;
+    font-family: Nunito;
+    font-size: 65px;
+    font-weight: bold;
+    color: rgba(var(--white), 0.65);
+    transform:translateY(-50%);
+    top: 50%;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.gallery-btn:hover {
+    color: rgba(var(--white), 1);
+}
+
+.next {
+    right: 10px;
+}
+
+.prev {
+    left: 10px;
+}
+
+.gallery-media {
+    max-height: 100%;
+    max-width: 100%;
+    animation: 1s gallery ease-in-out;
+}
+
+@keyframes gallery {
+    0% {
+        opacity: 0; 
+        transform: translateY(8px);
+    }
+    75% {
+        opacity: .75;
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
     }
 }
 
