@@ -21,7 +21,7 @@
   "bugs": {
     "url": "https://github.com/rachel-bryant/faith-full-food/issues"
   },
-  "homepage": "https://github.com/rachel-bryant/faith-full-food#readme",
+  "homepage": "https://github.com/rachel-bryant/faith-full-food/",
   "dependencies": {
     "react": "^19.2.8",
     "react-dom": "^19.2.8",
