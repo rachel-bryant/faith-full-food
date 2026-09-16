@@ -13,7 +13,7 @@ function Programs() {
         setPage((page + 1) % book_images.length);
     }
 
-    const gallery_media = ["../public/images/programs/gallery/1.jpeg", "../public/images/programs/gallery/2.jpg", "../public/images/programs/gallery/3.jpg", "../public/images/programs/gallery/4.jpg", "../public/images/programs/gallery/5.jpg", "../public/images/programs/gallery/6.jpg", "../public/images/programs/gallery/7.jpg", "../public/images/programs/gallery/8.jpg", "../public/images/programs/gallery/9.jpg", "../public/images/programs/gallery/10.jpg", "../public/images/programs/gallery/11.jpg", "../public/images/programs/gallery/12.jpg", "../public/images/programs/gallery/13.jpg", "../public/images/programs/gallery/14.mp4", "../public/images/programs/gallery/15.mp4"];
+    const gallery_media = ["../public/images/programs/gallery/1.jpeg", "../public/images/programs/gallery/2.jpg", "../public/images/programs/gallery/3.jpg", "../public/images/programs/gallery/4.jpg", "../public/images/programs/gallery/5.jpg", "../public/images/programs/gallery/6.jpg", "../public/images/programs/gallery/7.jpg", "../public/images/programs/gallery/8.jpg", "../public/images/programs/gallery/9.jpg", "../public/images/programs/gallery/10.jpg", "../public/images/programs/gallery/11.jpg", "../public/images/programs/gallery/12.jpg", "../public/images/programs/gallery/13.jpg", "../public/images/programs/gallery/14.jpg", "../public/images/programs/gallery/15.jpg"];
     const [media, setMedia] = useState(0);
 
     function next(){
@@ -45,11 +45,7 @@ function Programs() {
         <Project title="Do Food" desc="Do Food is FaithFull Food’s campus ministry program brand. We walk alongside churches and organizations that are campus adjacent to seed and grow new ministry that grows faith and fellowship by doing food. By rebranding, we support church’s abilities to grow faith in action with, by and for young people. "/>
         {/* gallery */}
         <div id="do-food-gallery">
-            {media === 13 || media === 14 ? (
-                <video key={media} className="gallery-media" src={gallery_media[media]} controls autoPlay />
-            ) : (
-                <img key={media} className="gallery-media" src={gallery_media[media]} />
-            )}
+            <img key={media} className="gallery-media" src={gallery_media[media]} />
             <button className="gallery-btn next" onClick={next}>&gt;</button>
             <button className="gallery-btn prev" onClick={prev}>&lt;</button>
         </div>

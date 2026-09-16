@@ -12,7 +12,7 @@ function PlayYourPart() {
         </div>
         <div className="get-involved purple">
             <div className="home-main">
-                <h1>Get Involved</h1>
+                <h1 id="purple-h1">Get Involved</h1>
                 <p>This is a growing movement and the best ideas come when people see themselves as a part of this thing. Whether you want to donate time, resources or finances, we want you to root into hope and grow this movement with us!</p>
             </div>
 

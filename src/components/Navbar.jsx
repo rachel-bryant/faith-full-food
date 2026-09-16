@@ -24,14 +24,14 @@ function Navbar() {
         <>
         <header>
             <div id="nav-bar">
-                <Link to="/" className="nav-link home-link">Home</Link>
+                <HashLink to="/#home" className="nav-link home-link">Home</HashLink>
                 {/* people section */}
                 <div id="people-dropdown">
                     <div className="nav-link">People&ensp;<img className="small-logo" src="../public/images/fruit/apple.png" /></div>
                     <div id="people-dropdown-content">
                         <HashLink to="/People#co-founders" className="dropdown-link">Co-Founders & Founding Team</HashLink>
                         <HashLink to="/People#fellows" className="dropdown-link">Fellows</HashLink>
-                        {/* <HashLink to="/People#food-entrepreneurs" className="dropdown-link">Food Entrepreneurs (FoodE’s)</HashLink> */}
+                        <HashLink to="/People#food-entrepreneurs" className="dropdown-link">Food Entrepreneurs (FoodE’s)</HashLink>
                         {/* <HashLink to="/People#partners" className="dropdown-link">Partners</HashLink> */}
                         {/* <HashLink to="/People#board" className="dropdown-link">Board</HashLink> */}
                     </div>
@@ -52,7 +52,7 @@ function Navbar() {
                     <div className="nav-link">Plot&ensp;<img className="small-logo" src="../public/images/fruit/blueberry.png" /></div>
                     <div id="purpose-dropdown-content">
                         <HashLink to="/Plot#scripture" className="dropdown-link">Scripture & Contemportary Wisom</HashLink>
-                        <HashLink to="/Plot#weekly-letter" className="dropdown-link">Carolyn's Weekly Letter</HashLink>
+                        {/* <HashLink to="/Plot#weekly-letter" className="dropdown-link">Carolyn's Weekly Letter</HashLink> */}
                     </div>
                 </div>
                 {/* places section */}

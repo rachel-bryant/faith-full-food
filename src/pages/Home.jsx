@@ -7,6 +7,7 @@ function Home() {
     return (
         <>
         <Navbar />
+        <section id="home" />
         {/* tree logo */}
         <div id="nav-logo">
             <img className="logo" alt="FaithFull Food logo" src="../public/images/logo.png"/>
@@ -42,6 +43,8 @@ function Home() {
                 <p>Generating relationships that: <span className="bold">feed</span>, <span className="bold">create</span>, and <span className="bold">grow faith</span> in the greater good.</p>
             </div>
         </div>
+
+        <img className="flyer" src="../public/images/home/childcare_flyer.png" />
 
         <div id="model">
             {/* MODEL */}

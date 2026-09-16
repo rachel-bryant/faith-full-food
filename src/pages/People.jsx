@@ -55,8 +55,12 @@ function People() {
         </div>
 
         {/* FOODES */}
-        {/* <h1 id="food-entrepreneurs" className="people-section-header top-margin-text">FoodEs</h1>
-        <div className="people-section">
+        <h1 id="food-entrepreneurs" className="people-section-header top-margin-text">FoodEs</h1>
+        <div className="people-content">
+            <p>We love food and we know the best food comes from recipes and people that are often locked out of participation in the food industry. Because we know good food, we've created a program that works with Food Entrepreneurs (FoodEs) from around the world who cook with love and seek places to share and distribute what they've made. Come back soon to catch some of our featured entrepreneurs and where to find them. </p>
+            <p>Are you interested in learning more about our Food Entrepreneurs? Please reach out to <a className="red-link" href="mailto:Gabbi@faithfull.food">Gabbi@faithfull.food</a></p>
+        </div>
+        {/* <div className="people-section">
             <Person photo="../public/images/headshots/" title="" name="" description="" />
         </div> */}
 

@@ -226,6 +226,10 @@ p {
 }
 
 /* HOME PAGE STYLING */
+#home {
+    scroll-margin-top: 100px;
+}
+
 .mission {
     display: flex;
     justify-content: center;
@@ -241,6 +245,7 @@ p {
 .home-main h1 {
     text-align: center;
     margin-bottom: 0;
+    color: rgb(var(--dark-green));
 }
 
 .home-main p {
@@ -330,6 +335,18 @@ p {
 .home-section:hover .bold {
     font-size: 23px;
     color: rgb(var(--white));
+}
+
+.flyer {
+    width: 80%;
+    margin: 10px auto 20px auto;
+    border: 3px solid #017397;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.flyer:hover {
+    border-width: 5px;
 }
 
 /* LOGO & FRUIT STYLING */
@@ -720,6 +737,10 @@ audio {
     max-width: 300px;
 }
 
+.red-link {
+    color: rgb(var(--dark-red));
+}
+
 /* specific people */
 #carolyn {
     transform: translateX(-50px);
@@ -765,6 +786,12 @@ audio {
     margin-bottom: 15px;
     color: rgb(var(--blue));
     scroll-margin-top: 100px;
+}
+
+.scripture-header {
+    font-size: 41px;
+    color: rgb(var(--blue));
+    margin: 5px auto 10px auto;
 }
 
 .purpose-main-img {
@@ -1063,7 +1090,11 @@ audio {
     border-bottom: 3px solid rgba(var(--purple), .75);
 }
 
-.get-involved h1 {
+.get-involved .purple h1 {
+    color: rgb(var(--purple));
+}
+
+#purple-h1 {
     color: rgb(var(--purple));
 }
 
@@ -1071,11 +1102,11 @@ audio {
     background: rgba(var(--purple), .4);
 }
 
-.home-sections .sign-up-btn {
+.home-sections .purple .sign-up-btn {
     background: rgb(var(--purple));
 }
 
-.home-sections .home-email {
+.home-sections .purple .home-email {
     color: rgb(var(--purple));
 }
 

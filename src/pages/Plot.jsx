@@ -42,15 +42,20 @@ function Plot() {
         </div>
         {/* SCRIPTURES */}
         <h1 id="scripture" className="purpose-header">Sacred Scripture</h1>
+        <h2 className="scripture-header">Bible</h2>
         <Quote quote="For if you remain silent at this time, relief and deliverance will arise from another place, but you and your family will perish. And who knows but that you have come to your position for such a time as this?" author="Esther 4:14" />
         <Quote quote="And God said, ‘Behold, I have given you every plant and yielding seed which is upon the face of all the earth, and every tree with seed in its fruit; you shall have them for food. And to every beast of the earth, and to every bird of the air, and to everything that creeps on the earth, everything that has the breath of life, I have given every green plant for food.’ And it was so. And God saw everything they had made and behold it was very good. And there was evening and there was morning, a sixth day." author="Genesis 1: 29-31" />
         <Quote quote="Jesus answered, 'Very truly I tell you, you are looking for me, not because you saw the signs I performed but because you ate the loaves and had your fill.”" author="John 6: 26" />
         <Quote quote="What does it profit my brethren, if a man says he has faith but has not works? Can his faith save him? If a brother or sister is ill-clad and in lack of daily food, and one of you says to them, ‘Go in peace and be warmed and filled,’ without giving them the things needed for the body, what does it profit? So faith by itself, if it has no works, is dead." author="James 2: 14-17" />
+        <h2 className="scripture-header">Quran</h2>
+        <Quote quote="Who though longing for it themselves, bestowed their food on the poor and the orphan and the captive.: 'We feed you for the sake of God: we seek from you neither recompense nor thanks:'" author="Sura 76: 8-9" />
+        <h2 className="scripture-header">Taittiriya Upanishad</h2>
+        <Quote quote="I am food, I am food, I am food. I am the eater of food, I am the eater of food, I am the eater of food. I am the maker of the verse, I am the maker of the verse." author="Taittiriya Upanishad 6" />
         {/* CAROLYN'S WEEKLY LETTER GOES HERE */}
-        <h1 id="weekly-letter" className="purpose-header">Carolyn's Weekly Letter</h1>
+        {/* <h1 id="weekly-letter" className="purpose-header">Carolyn's Weekly Letter</h1>
         <div id="letter">
             <p id="letter-text">Hello! This is where Carolyn's Weekly Letter will go! I added a handwriting font so let me know if that font works of if you want something else. I wanted it to look like a piece of notebook paper so let me know if you like it!<br/><br/>Rachel Bryant</p>
-        </div>
+        </div> */}
         <Footer />
         </>
     )
