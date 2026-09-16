@@ -721,6 +721,10 @@ audio {
 }
 
 /* specific people */
+#carolyn {
+    transform: translateX(-50px);
+}
+
 #gabbi {
     transform: translateX(-100px);
 }
