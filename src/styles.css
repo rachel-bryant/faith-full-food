@@ -969,9 +969,10 @@ audio {
 #rings {
     position: absolute;
     height: 105%;
-    width: auto;
-    right: 67%;
-    transform: translateY(-10px);
+    width: 60px;
+    object-fit: cover;
+    right: calc(100% - 30px);
+    transform: translateY(-5px);
     top: 0;
 }
 
