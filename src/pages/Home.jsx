@@ -10,17 +10,17 @@ function Home() {
         <section id="home" />
         {/* tree logo */}
         <div id="nav-logo">
-            <img className="logo" alt="FaithFull Food logo" src={`${import.meta.env.BASE_URL}/images/logo.png`}/>
+            <img className="logo" alt="FaithFull Food logo" src={`images/logo.png`}/>
             {/* apple logo --> people page */}
-            <Link to="/People"><img title="Go to: People" id="apple" className="fruit" src={`${import.meta.env.BASE_URL}/images/fruit/apple.png`}/></Link>
+            <Link to="/People"><img title="Go to: People" id="apple" className="fruit" src={`images/fruit/apple.png`}/></Link>
             {/* apricot logo --> projects page */}
-            <Link to="/Programs"><img title="Go to: Programs" id="apricot" className="fruit" src={`${import.meta.env.BASE_URL}/images/fruit/apricot.png`}/></Link>
+            <Link to="/Programs"><img title="Go to: Programs" id="apricot" className="fruit" src={`images/fruit/apricot.png`}/></Link>
             {/* banana logo --> purpose page */}
-            <Link to="/Plot"><img title="Go to: Plot" id="blueberry" className="fruit" src={`${import.meta.env.BASE_URL}/images/fruit/blueberry.png`}/></Link>
+            <Link to="/Plot"><img title="Go to: Plot" id="blueberry" className="fruit" src={`images/fruit/blueberry.png`}/></Link>
             {/* berry logo --> places page */}
-            <Link to="/Places"><img title="Go to: Places" id="berry" className="fruit" src={`${import.meta.env.BASE_URL}/images/fruit/berry.png`}/></Link>
+            <Link to="/Places"><img title="Go to: Places" id="berry" className="fruit" src={`images/fruit/berry.png`}/></Link>
             {/* grapes logo --> play your part page */}
-            <Link to="/PlayYourPart"><img title="Go to: Play Your Part" id="grapes" className="fruit" src={`${import.meta.env.BASE_URL}/images/fruit/grapes.png`}/></Link>
+            <Link to="/PlayYourPart"><img title="Go to: Play Your Part" id="grapes" className="fruit" src={`images/fruit/grapes.png`}/></Link>
         </div>
 
         {/* MISSION */}
@@ -44,7 +44,7 @@ function Home() {
             </div>
         </div>
 
-        <img className="flyer" src={`${import.meta.env.BASE_URL}images/home/childcare_flyer.PNG`} />
+        <img className="flyer" src={`images/home/childcare_flyer.PNG`} />
 
         <div id="model">
             {/* MODEL */}
