@@ -10,20 +10,20 @@ function Plot() {
         {/* INTRO */}
         <h1 className="purpose-header">Plot</h1>
         {/* big hairy audacious goals */}
-        <img className="purpose-main-img" src={`${import.meta.env.BASE_URL}/images/purpose/bahg.png`} />
+        <img className="purpose-main-img" src={`images/purpose/bahg.png`} />
         {/* text block */}
         <div className="purpose-section">
             <p>We are solving for much more than <span className="bold">hunger</span>. We are solving for <span className="bold">connection</span>. </p>
         </div>
         {/* trigen faith gap */}
-        <img className="purpose-main-img" src={`${import.meta.env.BASE_URL}/images/purpose/trigen.png`} />
+        <img className="purpose-main-img" src={`images/purpose/trigen.png`} />
         {/* text block */}
         <div className="purpose-section">
             <p>Doing stuff with food is nothing revolutionary... if we leave the system alone. But a broken system has led to a divided people and an unhealthy planet. At the core of this is the choice of non-participation by Gen X, Millennials and Gen Z. Informative “truth” clashes with the mysticism of faith and has led to multiple generations that no longer show up in purpose-driven, volunteer spaces like Rotary clubs and churches. But, coming together, in real life spaces, around a common mission, is the foundation for civic society to generate a civilized humanity.</p>
         </div>
         {/* wisdom tree */}
         <div id="tree-section">
-            <img className="plot-logo" src={`${import.meta.env.BASE_URL}/images/logo.png`} />
+            <img className="plot-logo" src={`images/logo.png`} />
             <div className="purpose-section tree-purpose">
                 <p>FaithFull Food is rooted in sacred texts grown through contemporary wisdom. We strive to continuously weave together new ideas with enduring, global proverbs to take words into action. We believe deeply that food and nourishment is a divine right to all of life upon this earth. </p>
             </div>

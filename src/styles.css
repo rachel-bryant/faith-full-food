@@ -1,17 +1,17 @@
 /* FONTS */
 @font-face {
     font-family: Minoria;
-    src: url("fonts/Minoria.ttf");
+    src: url("/fonts/Minoria.ttf");
 }
 
 @font-face {
     font-family: Nunito;
-    src: url("fonts/Nunito.ttf");
+    src: url("/fonts/Nunito.ttf");
 }
 
 @font-face {
     font-family: Playpen;
-    src: url("fonts/Playpen.ttf");
+    src: url("/fonts/Playpen.ttf");
 }
 
 /* VARIABLES */
