@@ -1,5 +1,5 @@
 import '../styles.css';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import Navbar from '../components/Navbar.jsx';
 import Footer from '../components/Footer.jsx';
 import Project from '../components/Project.jsx';
@@ -15,6 +15,18 @@ function Programs() {
 
     const gallery_media = ["images/programs/gallery/1.jpeg", "images/programs/gallery/2.jpg", "images/programs/gallery/3.jpg", "images/programs/gallery/4.jpg", "images/programs/gallery/5.jpg", "images/programs/gallery/6.jpg", "images/programs/gallery/7.jpg", "images/programs/gallery/8.jpg", "images/programs/gallery/9.jpg", "images/programs/gallery/10.jpg", "images/programs/gallery/11.jpg", "images/programs/gallery/12.jpg", "images/programs/gallery/13.jpg", "images/programs/gallery/14.jpg", "images/programs/gallery/15.jpg"];
     const [media, setMedia] = useState(0);
+
+    useEffect(() => {
+        book_images.forEach((image) => {
+            const img = new Image();
+            img.src = `/images/programs/book/${image}`;
+        });
+
+        gallery_media.forEach((image) => {
+            const img = new Image();
+            img.src = `/images/programs/gallery/${image.split('/').pop()}`;
+        });
+    }, []);
 
     function next(){
         setMedia((media + 1) % gallery_media.length);
