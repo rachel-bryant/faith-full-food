@@ -27,7 +27,7 @@ function Navbar() {
                 <HashLink to="/#home" className="nav-link home-link">Home</HashLink>
                 {/* people section */}
                 <div id="people-dropdown">
-                    <div className="nav-link">People&ensp;<img className="small-logo" src="../public/images/fruit/apple.png" /></div>
+                    <div className="nav-link">People&ensp;<img className="small-logo" src={`${import.meta.env.BASE_URL}images/fruit/apple.png`} /></div>
                     <div id="people-dropdown-content">
                         <HashLink to="/People#co-founders" className="dropdown-link">Co-Founders & Founding Team</HashLink>
                         <HashLink to="/People#fellows" className="dropdown-link">Fellows</HashLink>
@@ -38,7 +38,7 @@ function Navbar() {
                 </div>
                 {/* programs section */}
                 <div id="projects-dropdown">
-                    <div className="nav-link">Programs&ensp;<img className="small-logo" src="../public/images/fruit/apricot.png" /></div>
+                    <div className="nav-link">Programs&ensp;<img className="small-logo" src={`${import.meta.env.BASE_URL}images/fruit/apricot.png`} /></div>
                     <div id="projects-dropdown-content">
                         <HashLink to="/Programs#cnp" className="dropdown-link">The Collective Narrative Project</HashLink>
                         <HashLink to="/Programs#do-food" className="dropdown-link">Do Food</HashLink>
@@ -49,7 +49,7 @@ function Navbar() {
                 </div>
                 {/* purpose section */}
                 <div id="purpose-dropdown">
-                    <div className="nav-link">Plot&ensp;<img className="small-logo" src="../public/images/fruit/blueberry.png" /></div>
+                    <div className="nav-link">Plot&ensp;<img className="small-logo" src={`${import.meta.env.BASE_URL}images/fruit/blueberry.png`} /></div>
                     <div id="purpose-dropdown-content">
                         <HashLink to="/Plot#scripture" className="dropdown-link">Scripture & Contemportary Wisom</HashLink>
                         {/* <HashLink to="/Plot#weekly-letter" className="dropdown-link">Carolyn's Weekly Letter</HashLink> */}
@@ -57,7 +57,7 @@ function Navbar() {
                 </div>
                 {/* places section */}
                 {/* <div id="places-dropdown">
-                    <div className="nav-link">Places&ensp;<img className="small-logo" src="../public/images/fruit/berry.png" /></div>
+                    <div className="nav-link">Places&ensp;<img className="small-logo" src={`${import.meta.env.BASE_URL}images/fruit/berry.png`} /></div>
                     <div id="places-dropdown-content">
                         <Link to="/Places" className="dropdown-link">Newport St Retreat</Link>
                         <Link to="/Places" className="dropdown-link">UPark UMC</Link>
@@ -65,7 +65,7 @@ function Navbar() {
                 </div> */}
                 {/* play your part section */}
                 <div id="part-dropdown">
-                    <div className="nav-link">Play Your Part&ensp;<img className="small-logo" src="../public/images/fruit/grapes.png" /></div>
+                    <div className="nav-link">Play Your Part&ensp;<img className="small-logo" src={`${import.meta.env.BASE_URL}images/fruit/grapes.png`} /></div>
                     <div id="part-dropdown-content">
                         <HashLink to="/PlayYourPart#volunteer" className="dropdown-link">Volunteer</HashLink>
                         <HashLink to="/PlayYourPart#give" className="dropdown-link">Give</HashLink>

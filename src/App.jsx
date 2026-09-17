@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { HashRouter, Routes, Route } from 'react-router-dom';
 import Home from './pages/Home';
 import People from './pages/People';
 import Programs from './pages/Programs';
@@ -9,7 +9,7 @@ import PlayYourPart from './pages/PlayYourPart';
 function App() {
     return (
         <>
-        <BrowserRouter>
+        <HashRouter>
             <Routes>
                 <Route path="/" element={<Home />} />
                 <Route path="/People" element={<People />} />
@@ -18,7 +18,7 @@ function App() {
                 <Route path="/Places" element={<Places />} />
                 <Route path="/PlayYourPart" element={<PlayYourPart />} />
             </Routes>
-        </BrowserRouter>
+        </HashRouter>
         </>
     )
 }
