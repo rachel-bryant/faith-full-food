@@ -31,7 +31,6 @@ function Navbar() {
                     <div id="people-dropdown-content">
                         <HashLink to="/People#co-founders" className="dropdown-link">Co-Founders & Founding Team</HashLink>
                         <HashLink to="/People#fellows" className="dropdown-link">Fellows</HashLink>
-                        <HashLink to="/People#food-entrepreneurs" className="dropdown-link">Food Entrepreneurs (FoodE’s)</HashLink>
                         {/* <HashLink to="/People#partners" className="dropdown-link">Partners</HashLink> */}
                         {/* <HashLink to="/People#board" className="dropdown-link">Board</HashLink> */}
                     </div>
@@ -45,6 +44,7 @@ function Navbar() {
                         <HashLink to="/Programs#cornerstone" className="dropdown-link">Cornerstone Conversions</HashLink>
                         <HashLink to="/Programs#hydroponics" className="dropdown-link">Hydroponics</HashLink>
                         <HashLink to="/Programs#culture" className="dropdown-link">Growing Church Culture</HashLink>
+                        <HashLink to="/Programs#foodes" className="dropdown-link">Food Entrepreneurs (FoodE’s)</HashLink>
                     </div>
                 </div>
                 {/* purpose section */}

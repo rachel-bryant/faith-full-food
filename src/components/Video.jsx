@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-function Video({ title, video, videoSrc }) {
+function Video({ title, video, videoSrc, className }) {
     const [playing, setPlaying] = useState(false);
     
     function playVideo() {
@@ -11,7 +11,7 @@ function Video({ title, video, videoSrc }) {
         <>
         <div className="video-block">
             <p>{ title || "Title"}</p>
-            <div className="video">
+            <div className={"video"}>
                 {!playing && (
                     <>
                     <img src={videoSrc} className="thumbnail"/>

@@ -272,6 +272,46 @@ p {
     color: rgb(var(--pink));
 }
 
+#home-video {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 20px;
+    background: rgba(var(--light-green), 0.2);
+    border-top: 3px solid rgba(var(--dark-green), 0.75);
+    border-bottom: 3px solid rgba(var(--dark-green), 0.75);
+    padding: 20px 0;
+}
+
+#home-video iframe, #foodes-video{
+    aspect-ratio: 9/6;
+    width: 80%;
+    max-width: 800px;
+    border: none;
+    border-radius: 5px;
+}
+
+#home-video h1 {
+    margin-top: 5px;
+    margin-bottom: 15px;
+    color: rgb(var(--dark-green));
+}
+
+#monday-blast {
+    width: 80%;
+    max-width: 800px;
+    margin: 0 auto 20px auto;
+    border: 3px solid rgba(var(--light-green), 0.75);
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+#monday-blast:hover {
+    border: 5px solid rgba(var(--light-green), 1);
+    border-radius: 12px;
+}
+
 #model h1 {
     color: #664225;
 }
@@ -285,21 +325,21 @@ p {
 
 .get-involved, #mission {
     border-top: 3px solid rgba(var(--dark-green), 0.75);
-    border-bottom: 3px solid rgba(var(--dark-green), 0.686);
+    border-bottom: 3px solid rgba(var(--dark-green), 0.75);
     background: rgba(var(--light-green), 0.2);
     margin-bottom: 20px;
 }
 
 #vision-vals {
-    border-top: 3px solid rgba(var(--pink), 0.643137);
-    border-bottom: 3px solid rgba(var(--pink), 0.643137);
+    border-top: 3px solid rgba(var(--pink), 0.75);
+    border-bottom: 3px solid rgba(var(--pink), 0.75);
     background: rgba(var(--pink), 0.211765);
     margin-bottom: 20px;
 }
 
 #model {
-    border-top: 3px solid rgba(var(--brown), 0.690196);
-    border-bottom: 3px solid rgba(var(--brown), 0.690196);
+    border-top: 3px solid rgba(var(--brown), 0.75);
+    border-bottom: 3px solid rgba(var(--brown), 0.75);
     background: rgba(var(--brown), 0.376471);
     margin-bottom: 20px;
 }
@@ -935,6 +975,15 @@ audio {
     padding: 0 20px;
 }
 
+.project p {
+    transition: 0.3s;
+}
+
+.project:hover p {
+    font-weight: 700;
+    color: rgb(165, 91, 59);
+}
+
 .project-title {
     color: rgb(var(--orange));
     text-align: center;
@@ -1114,7 +1163,7 @@ audio {
     color: rgb(var(--purple));
 }
 
-#volunteer, #give, #connect {
+#volunteer, #give, #connect, #hydroponics, #culture, #foodes {
     scroll-margin-top: 100px;
 }
 

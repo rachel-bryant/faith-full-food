@@ -1,6 +1,7 @@
 import '../styles.css';
 import Navbar from '../components/Navbar.jsx';
 import Footer from '../components/Footer.jsx';
+import Video from '../components/Video.jsx';
 import { Link } from 'react-router-dom';
 
 function Home() {
@@ -44,7 +45,13 @@ function Home() {
             </div>
         </div>
 
-        <img className="flyer" src={`images/home/childcare_flyer.PNG`} />
+        <div id="home-video">
+            <h1>FaithFull Food Promo</h1>
+            <iframe src="https://drive.google.com/file/d/1mspTkVOYgxWJBzUpI2p6zZcXVIYvGl-j/preview" ></iframe>
+        </div>
+
+        {/* Monday blast goes here! */}
+        <img id="monday-blast" src="images/home/monday_blast.png" />
 
         <div id="model">
             {/* MODEL */}

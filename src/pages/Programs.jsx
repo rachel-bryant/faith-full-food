@@ -76,10 +76,20 @@ function Programs() {
         </div>
         {/* HYDROPONICS */}
         {/* <img id="hydroponics" src="../images/programs/" className="programs-img" /> */}
+        <section id="hydroponics" />
         <Project title="Hydroponics" desc="We are learning an indoor grow project at University Park UMC. The first of its kind, this project aspires to connect disparate yet proximal communities within the building to provide year-round produce for our neighbors in need. Please reach out if you are interested in learning more, or if your church would like to join our first cohort of hydroponic churches, launching in early 2027. "/>
         {/* GROWING CHURCH CULTURE */}
         {/* <img id="culture" src="../images/programs/" className="programs-img" /> */}
+        <section id="culture" />
         <Project title="Growing Church Culture" desc="In order to bridge generational divides and divides between those within and outside of church spaces, FaithFull Food is creating a series of workshops, courses and retreats to help prepare churches to integrate and manage new projects. These courses face church committees and congregants who are hungry for vitality, yet struggle with attracting and integrating new ideas and ways of doing within their congregations. We will be launching the pilot of this work in early 2027. Please reach out if you are interested in participating. " />
+        {/* FOODES */}
+        <section id="foodes" />
+        <Project title="FoodEs" desc={<>
+            <p>We love food and we know the best food comes from recipes and people that are often locked out of participation in the food industry. Because we know good food, we've created a program that works with Food Entrepreneurs (FoodEs) from around the world who cook with love and seek places to share and distribute what they've made. Come back soon to catch some of our featured entrepreneurs and where to find them.</p>
+            <p>Are you interested in learning more about our Food Entrepreneurs? Please reach out to &nbsp;
+            <a className="programs-email" href="mailto:Gabbi@faithfull.food">Gabbi@faithfull.food</a></p>
+            <iframe id="foodes-video" src="https://drive.google.com/file/d/1EnzUBXn2Y4zClL3u2_7EdzQaHxNNB-6G/preview"></iframe>
+            </>} />
         <Footer />
         </>
     )

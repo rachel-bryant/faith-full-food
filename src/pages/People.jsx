@@ -49,16 +49,9 @@ function People() {
             <Person id="owen" photo={`images/headshots/Owen.jpg`} title="Project: Walking with the Unhoused" name="Owen Scott" description="Owen is a senior at the University of Denver, majoring in history, and growing into a societal leader through his work with ROTC and rooted in his faith in the greater good, when we all do our part. As our work-study Fellow, Owen will be kick-starting a branch of campus ministry to invite DU students to help us with micro and macro solutions to offer our unhoused neighbors. His ministry focus includes connecting DU students with SASSY and sandwich making along with various small groups already meeting within UPark UMC (men's group, Poetry, Psalms & Seinfeld, and Friday Bible Study). His fellowship forges intergenerational connections and transforms how we put our faith in action to meet the most pressing challenges of our time. " />
         </div>
         <div className="video-section">
-            <Video videoSrc={`images/thumbnails/hydroponics.png`} title="Growing connection with Hydroponics" video="https://drive.google.com/file/d/1QtXcWjUpIJMD3eKXx9lR33AjWLfmTmo1/preview" />
+            <Video videoSrc={`images/thumbnails/hydroponics.png`} title="Growing connection with Hydroponics" video="https://drive.google.com/file/d/1HD1Iz2vJ3hW5oZTpMfXK9Z1f7Oh4S6Vb/preview" />
             <Video videoSrc={`images/thumbnails/crafts.png`} title="Come craft with Alycea first Sunday of the month at 12:30pm!" video="https://drive.google.com/file/d/1Q1s20CQr2726fwA5N25T7dwjt5nGU2C0/preview" />
             <Video videoSrc={`images/thumbnails/sassy.png`} title="Join us on second Sundays to put service in action!" video="https://drive.google.com/file/d/10prU3JNJX8mrPVpVmGOKUYXAgRJhx3WY/preview" />
-        </div>
-
-        {/* FOODES */}
-        <h1 id="food-entrepreneurs" className="people-section-header top-margin-text">FoodEs</h1>
-        <div className="people-content">
-            <p>We love food and we know the best food comes from recipes and people that are often locked out of participation in the food industry. Because we know good food, we've created a program that works with Food Entrepreneurs (FoodEs) from around the world who cook with love and seek places to share and distribute what they've made. Come back soon to catch some of our featured entrepreneurs and where to find them. </p>
-            <p>Are you interested in learning more about our Food Entrepreneurs? Please reach out to <a className="red-link" href="mailto:Gabbi@faithfull.food">Gabbi@faithfull.food</a></p>
         </div>
         {/* <div className="people-section">
         
