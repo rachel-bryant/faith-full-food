@@ -88,8 +88,8 @@ function Programs() {
             <p>We love food and we know the best food comes from recipes and people that are often locked out of participation in the food industry. Because we know good food, we've created a program that works with Food Entrepreneurs (FoodEs) from around the world who cook with love and seek places to share and distribute what they've made. Come back soon to catch some of our featured entrepreneurs and where to find them.</p>
             <p>Are you interested in learning more about our Food Entrepreneurs? Please reach out to &nbsp;
             <a className="programs-email" href="mailto:Gabbi@faithfull.food">Gabbi@faithfull.food</a></p>
-            <iframe id="foodes-video" src="https://drive.google.com/file/d/1EnzUBXn2Y4zClL3u2_7EdzQaHxNNB-6G/preview"></iframe>
-            </>} />
+            <video id="foodes-video" src="video/foodes.mp4" controls />
+        </>} />
         <Footer />
         </>
     )

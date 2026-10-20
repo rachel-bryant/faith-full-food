@@ -47,11 +47,11 @@ function Home() {
 
         <div id="home-video">
             <h1>FaithFull Food Promo</h1>
-            <iframe src="https://drive.google.com/file/d/1mspTkVOYgxWJBzUpI2p6zZcXVIYvGl-j/preview" ></iframe>
+            <video src="video/promo.mp4" controls/>
         </div>
 
         {/* Monday blast goes here! */}
-        <img id="monday-blast" src="images/home/monday_blast.png" />
+        <video id="monday-blast" src="images/home/monday_blast.mp4" controls/>
 
         <div id="model">
             {/* MODEL */}

@@ -20,7 +20,7 @@ function Video({ title, video, videoSrc, className }) {
                 )}
 
                 {playing && (
-                    <iframe src={`${video}?autoplay=1`} allow="autoplay"></iframe>
+                    <iframe src={`${video}?autoplay=1`} allow="autoplay; fullscreen" allowFullScreen></iframe>
                 )}
             </div>
         </div>
