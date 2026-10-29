@@ -315,6 +315,17 @@ p {
     border-radius: 12px;
 }
 
+#mail-list {
+    border-top: 3px solid rgba(var(--orange), 0.75);
+    border-bottom: 3px solid rgba(var(--orange), 0.75);
+    background: rgba(var(--orange), 0.2);
+    margin-bottom: 20px;
+}
+
+#mail-list h1, #mail-list .home-email {
+    color: rgb(var(--orange));
+}
+
 #model h1 {
     color: #664225;
 }
@@ -336,14 +347,14 @@ p {
 #vision-vals {
     border-top: 3px solid rgba(var(--pink), 0.75);
     border-bottom: 3px solid rgba(var(--pink), 0.75);
-    background: rgba(var(--pink), 0.211765);
+    background: rgba(var(--pink), 0.2);
     margin-bottom: 20px;
 }
 
 #model {
     border-top: 3px solid rgba(var(--brown), 0.75);
     border-bottom: 3px solid rgba(var(--brown), 0.75);
-    background: rgba(var(--brown), 0.376471);
+    background: rgba(var(--brown), 0.4);
     margin-bottom: 20px;
 }
 

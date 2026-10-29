@@ -51,7 +51,14 @@ function Home() {
         </div>
 
         {/* Monday blast goes here! */}
-        <video id="monday-blast" src="images/home/monday_blast.mp4" controls/>
+        <img id="monday-blast" src="images/home/monday_blast.png" />
+
+        <div id="mail-list">
+            <div className="home-main">
+                <h1>Join Our Email List!</h1>
+                <p>Email us at <a className="home-email" href="mailto:info@FaithFull.Food">info@FaithFull.Food</a> to be added to the mailing list!</p>
+            </div>
+        </div>
 
         <div id="model">
             {/* MODEL */}
